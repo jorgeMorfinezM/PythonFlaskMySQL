@@ -1,0 +1,1 @@
+/usr/local/lib/python3.6/encodings/cp869.py

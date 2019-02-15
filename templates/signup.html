@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>Bucket List App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../static/css/signup.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    <script src="../static/js/signUp.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header" align="center">
+        <nav>
+          <p align="center">
+            <a align="left" href="#">Home</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a align="center" href="/consulta">Sign In</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a align="right" href="/showSignUp">Sign Up</a>
+          </p>
+        </nav>
+        <!--
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            </br>
+            <li role="presentation"><a href="/consulta">Sign In</a></li>
+            </br>
+            <li role="presentation"><a href="/showSignUp">Sign Up</a></li>
+          </ul>
+        </nav>
+        -->
+        </br>
+        <h3 class="text-muted">Python Flask App</h3>
+      </div>
+    </div>
+
+      <div class="jumbotron">
+        <form class="form-signin" action="http://localhost:5000/consulta" method = "POST">
+
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Nombre de Usuario" required autofocus>
+        </br>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Correo electronico" required autofocus>
+        </br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+        </br>
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign up</button>
+      </form>
+      </div>
+
+      <div class="data">
+        <form method="POST">
+          <center>
+            <table align='center' border='1' bordercolor='#f0f0f0' cellspacing='1' cellpadding='1'>
+              <tr bgcolor='#666666'>
+                <td>
+                  <font face='Arial'>
+                    <font color='white'>
+                      <b>Núm.</b>
+                    </font>
+                </td>
+                <td>
+                  <center>
+                    <font face='Arial'>
+                      <font color='white'>
+                        <b>CFDI<br>Fecha del CFDI - No. de Certificado</b>
+                      </font>
+                  </center>
+                </td>
+                <td>
+                  <center>
+                    <font face='Arial'>
+                      <font color='white'>
+                        <b>Ver.</b>
+                      </font>
+                  </center>
+                </td>
+                <td>
+                  <center>
+                    <font face='Arial'>
+                      <font color='white'>
+                        <b>RFC y Raz&#243;n Social del Receptor</b>
+                      </font>
+                  </center>
+                </td>
+                <td>
+                  <font face='Arial'>
+                    <font color='white'>
+                      <b>Descargar</b>
+                    </font>
+                </td>
+              </tr>
+              <tr>
+                <br>
+                <td>
+                  <font face='Arial'>
+                    <font color='#666666'>1/1</font>
+                  </font>
+                </td>
+                <td>
+                  <font face='Arial'>
+                    <b>
+                      <font color='green'>9963002866_cfdi.xml</font>
+                      <br>
+                      <font color='#666666'>2019-02-12T09:47:43 - 00001000000405087348</font>
+                  </font>
+                </td>
+                <td>
+                  <b>
+                    <font face='Arial'>
+                      <font color='blue'>3.3</b>
+                  </font>
+                </td>
+                <td>
+                  <b>
+                    <font face='Arial'>OFI920113KZ8 - LSC COMMUNICATIONS PENDAFLEX MEXICO S DE RL DE CV</b>
+                  </font>
+                </td>
+                <td>
+                  <center>
+                    <img src='static/images/down_file.png' width='25px'>
+                  </center>
+                </td>
+              <tr>
+            </table>
+          </center>
+        </form>
+      </div>
+
+  </br>
+  </br>
+      <div align="left">
+        <footer class="footer">
+          <p>&copy; Ofix S.A. de C.V. 2019</p>
+        </footer>
+      </div>
+
+    </div>
+  </body>
+</html>
+
